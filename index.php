@@ -23,7 +23,7 @@
             if (decodedText !== lastResult) {
                 ++countResults;
                 lastResult = decodedText;
-                location.href = `result.php?comanda=`, decodedResult;
+                location.href = `result.php?comanda=${decodedText}`, decodedResult;
                 console.log(`Scan result ${decodedText}`, decodedResult);
             }
         }
